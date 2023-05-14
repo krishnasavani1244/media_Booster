@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+<img align="left" user="https://github.com/krishnasavani1244/media_booster/assets/131374449/700a2139-5d49-4135-98b7-6ab8dce528b9" width"220px">
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
