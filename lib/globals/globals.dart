@@ -10,24 +10,24 @@ class Globals {
      "name":"Naiyo Lagda kisi ka bhai kisi ki jaan",
    },
    {
-     "song": "assets/audio/Tere Pyaar.mp3",
+     "song": "assets/audio/Kithe-Chaliye-Tu.mp3",
      "image": "assets/images/music.png",
-     "name":"Tere Pyaar Tu Jhoothi Main Makkar",
+     "name":"Kithe-Chaliye-Tu Shershaah",
    },
    {
-     "song": "assets/audio/Naiyo Lagda .mp3",
+     "song": "assets/audio/Kabhi Tumhe.mp3",
      "image": "assets/images/music.png",
-     "name":"Naiyo Lagda kisi ka bhai kisi ki jaan",
+     "name":"Kabhi Tumhe Shershaah",
    },
    {
-     "song": "assets/audio/Naiyo Lagda .mp3",
+     "song": "assets/audio/Nacho-Nacho.mp3",
      "image": "assets/images/music.png",
-     "name":"Naiyo Lagda kisi ka bhai kisi ki jaan",
+     "name":"Nacho-Nacho RRR",
    },
    {
-     "song": "assets/audio/Naiyo Lagda .mp3",
+     "song": "assets/audio/Saaki Saaki.mp3",
      "image": "assets/images/music.png",
-     "name":"Naiyo Lagda kisi ka bhai kisi ki jaan",
+     "name":"Saaki Saaki",
    },
    {
      "song": "assets/audio/Naiyo Lagda .mp3",

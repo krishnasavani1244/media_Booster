@@ -1,24 +1,24 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
-
 import '../../globals/globals.dart';
+import 'Home_page.dart';
 
 
-
-
-class audio extends StatefulWidget {
-  const audio({Key? key}) : super(key: key);
+class audio_player extends StatefulWidget {
+  const audio_player({Key? key}) : super(key: key);
 
   @override
-  State<audio> createState() => _audioState();
+  State<audio_player> createState() => _audio_playerState();
 }
 
+
 new_song({required bool play}) {
+
   assetsAudioPlayer.open(
     Audio(
       "${Globals.all_Song[Globals.initinalvalue]['song']}",
       metas: Metas(
-        title: "${Globals.all_Song[Globals.initinalvalue]["name  "]}",
+        title: "${Globals.all_Song[Globals.initinalvalue]["name"]}",
         artist: "Unknown",
         image: const MetasImage.asset(
           "assets/images/music.png",
@@ -31,15 +31,14 @@ new_song({required bool play}) {
   );
 }
 
-var assetsAudioPlayer;
-
 
 bool stop = false;
 
-class _audioState extends State<audio> {
+
+class _audio_playerState extends State<audio_player> {
+
   @override
   void initState() {
-
     super.initState();
 
     assetsAudioPlayer.stop();
@@ -47,11 +46,18 @@ class _audioState extends State<audio> {
   }
 
 
+
   @override
   Widget build(BuildContext context) {
+    double _heigth = MediaQuery
+        .of(context)
+        .size
+        .height;
+    double _width = MediaQuery
+        .of(context)
+        .size
+        .width;
 
-    double _heigth = MediaQuery.of(context).size.height;
-    double _width = MediaQuery.of(context).size.width;
 
     return Scaffold(
       appBar: AppBar(
@@ -68,7 +74,7 @@ class _audioState extends State<audio> {
             const SizedBox(height: 50),
             Text(
               "${Globals.all_Song[Globals.initinalvalue]['name']}",
-              style: const TextStyle(fontSize: 25, color: Colors.red),
+              style: const TextStyle(fontSize: 20, color: Colors.red),
             ),
             const SizedBox(height: 30),
             StreamBuilder(
@@ -86,7 +92,8 @@ class _audioState extends State<audio> {
                   return Column(
                     children: [
                       Text(
-                        "${data.toString().split(".")[0]} / ${Globals.totalsecond}",
+                        "${data.toString().split(".")[0]} / ${Globals
+                            .totalsecond}",
                         style: const TextStyle(fontSize: 25),
                         textAlign: TextAlign.center,
                       ),
@@ -177,10 +184,12 @@ class _audioState extends State<audio> {
                     ],
                   );
                 }
-                ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+

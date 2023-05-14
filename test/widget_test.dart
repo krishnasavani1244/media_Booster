@@ -14,7 +14,7 @@ import 'package:media_booster/views/screen/audio_player.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const audio());
+    await tester.pumpWidget(const audio_player());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
